@@ -72,6 +72,13 @@ client.on("messageCreate", (msg) => {
             });
         }
     }
+    if (msg.content.startsWith("d.help")) {
+        msg.channel.send(`Dall-E Mini Bot Help
+--
+Commands:
+d.generate - Generates an image.
+d.help - Shows this list.`);
+    }
 });
 
 client.on("ready", () => {
